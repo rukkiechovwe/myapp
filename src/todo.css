@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #00BCD4;
+    background: linear-gradient(90deg, #49959e, #00BCD4);
+    color: #fff;
+}
+.todo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: #f1f0f0;
+    padding: 0 15px;
+    text-decoration:none;
+}
+ul{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    background-color: transparent;
+    border: 2px solid #f1f0f0;
+    border-radius: 30px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-form{
+    margin: 20px 0 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: center;
+}
+label{
+    color: #f1f0f0;
+}
+input[type="text"]{
+    padding: 8px 10px;
+    border-radius: 15px;
+    width: 50%;
+    color: #f1f0f0;
+    border: 2px solid #f1f0f0;
+    background: transparent;
+}
+input[type="text"]::placeholder{
+    color: #f1f0f0;
+}
+.add-button{
+    padding: 7px 14px;
+    margin-left: -22px;
+    border-radius: 50%;
+    border: none;
+    background-color: #bdbaba;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+}
+input[type="text"]:focus,.add-button:focus{
+    outline: none;
+}
+@media only screen and (max-width:700px){
+    input[type="text"],ul{width: 70%;}
+}
+@media only screen and (max-width:700px){
+    input[type="text"],ul{width: 90%;}
+}
