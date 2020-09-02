@@ -65,7 +65,7 @@ class TodoApp extends Component {
           const list = window.localStorage.getItem('myTodos');
           const parsedList = JSON.parse(list);
           this.setState({
-              tasks: parsedList,
+              tasks: parsedList === null ? []:parsedList,
           })
       }
     
