@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Functionality = ({deleteTask,completeTask}) => {
     return (
         <div>
-            <a href="#" onClick={deleteTask}><FontAwesomeIcon icon={faTrashAlt}/></a>
+            <a href="#" onClick={ deleteTask }><FontAwesomeIcon icon={faTrashAlt}/></a>
             <a href="#" onClick={completeTask}><FontAwesomeIcon icon={faCheckCircle}/></a>
         </div>
    )
@@ -83,14 +83,16 @@ class TodoApp extends Component {
         })
     }
 
-  deleteTask(index) {
-      const { tasks } = this.state;
+    deleteTask(index) {
+        if (window.confirm('Delete this item?')) {
+            const { tasks } = this.state;
       tasks.splice(index, 1);
 
       this.setState({tasks}, () => {
         window.localStorage.setItem('myTodos', JSON.stringify(this.state.tasks))
     })
-  }
+        }
+  } 
 
 
     render() {
