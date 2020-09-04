@@ -4,7 +4,7 @@
 }
 body{
     background-color: #00BCD4;
-    background: linear-gradient(90deg, #49959e, #00BCD4);
+    background: linear-gradient(90deg, #047684, #00BCD4);
     color: #fff;
 }
 .todo{
@@ -59,13 +59,13 @@ input[type="text"]::placeholder{
     color: #f1f0f0;
 }
 .add-button{
-    padding: 7px 14px;
+    padding: 5px 14px;
     margin-left: -22px;
     border-radius: 50%;
     border: none;
-    background-color: #bdbaba;
-    color: #fff;
-    font-size: 18px;
+    background-color: #ffffff;
+    color: #01acc2;
+    font-size: 22px;
     font-weight: 900;
 }
 input[type="text"]:focus,.add-button:focus{
